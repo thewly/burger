@@ -1,24 +1,22 @@
 <h1>burgers</h1>
 
 
-
-{{#each burgers}}
-{{!-- put the each loops inside of the if statements instead of the way it is now --}}
-{{#if this.devoured}}
 <h2>Has Eatten</h2>
-<li>
-    {{this.id}}. {{this.burger_name}}. {{this.devoured}}
-</li>
+{{#each burgers}}
+    {{#if this.devoured}}
+    <li>
+        {{this.id}}. {{this.burger_name}}. {{this.devoured}}
+    </li>
+    {{/if}}
+{{/each}}
 
-{{/if}}
-
-{{#unless this.devoured}}
 <h2>To Eat</h2>
-<li>
-    {{this.id}}. {{this.burger_name}}. {{this.devoured}}
-</li>
-{{/unless}}
-
+{{#each burgers}}
+    {{#unless this.devoured}}
+    <li>
+        {{this.id}}. {{this.burger_name}}. {{this.devoured}}
+    </li>
+    {{/unless}}
 {{/each}}
 
 <h2>Create a Burger Plan</h2>
