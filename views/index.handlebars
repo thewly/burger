@@ -5,16 +5,16 @@
 
       </div>
       <div class="col-sm-4">
-        <h1 class="text-center">Burgers!</h1>
-        <img class="rounded mx-auto d-block" height="300px" width="100%" src="../public/assets/img/badburger.jpg">
+        <h1 class="text-center">Burgers Tracker App!</h1>
+        <img class="rounded mx-auto d-block" height="300px" width="100%" src="http://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4114.png">
       </div>
       <div class="col-sm-4">
 
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
+  <div class="row" >
+    <div class="col-md-6" id="Eat">
 
   <h2>Burgers I want to eat.</h2>
       <ul>
@@ -34,14 +34,14 @@
         {{/each}}
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" id="Completed">
 
       <h2>Devoured Burgers</h2>
 
       <ul>
         {{#each burgers}}
         {{#if eaten}}
-       <li>
+       <li id="li2">
 	{{name}}
 	
 </li>
@@ -51,7 +51,7 @@
       </ul>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="AddBurger">
     <div class="col-md-12">
 
       <h2>Add a Burger</h2>
